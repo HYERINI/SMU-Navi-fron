@@ -15,12 +15,14 @@ import Mypage from "./pages/Mypage/Mypage";
 import CheckDemon from "./pages/CheckDemon/CheckDemon";
 
 import ReportTraffic from "./pages/ReportTraffic/ReportTraffic";
+import TrafficList from "./pages/ReportTraffic/TrafficList";
 import Write_ReportTraffic from "./pages/ReportTraffic/Write_traffic";
 import Detail_traffic from "./pages/ReportTraffic/Detail_traffic";
 
 import TakeTaxi from "./pages/TakeTaxi/TakeTaxi";
 import Write_TakeTaxi from './pages/TakeTaxi/Write_TakeTaxi';
 
+import CCTV from './pages/CCTV/CCTV';
 import Notice from "./pages/Notice/Notice";
 import Write_Notice from './pages/Notice/Write_notice';
 import Detail_Notice from './pages/Notice/Detail_notice';
