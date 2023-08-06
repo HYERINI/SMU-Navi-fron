@@ -61,12 +61,12 @@ export const PC = ({children}) => {
 function App(){
     return(<>
             <Mobile>
-                <Router basename="/">
+                <Router basename="">
                     <Routes>
                         <Route path="/main" element={<MobileMain />}></Route>
                         <Route path="/login" element={<MobileLogin />}></Route>
                         <Route path="/signup" element={<MobileSignup />}></Route>
-                        <Route path="/" element={<MapMain />}></Route>
+                        <Route path="" element={<MapMain />}></Route>
                     </Routes>
                 </Router>
             </Mobile>
@@ -78,7 +78,7 @@ function App(){
                         <Route path="/findpw" element={<FindPw />}></Route>
                         <Route path="/mypage" element={<Mypage />}></Route>
 
-                        <Route path="/" element={<MapMain />}></Route>
+                        <Route path="" element={<MapMain />}></Route>
 
                         <Route path="/check_demon" element={<CheckDemon />}></Route>
 
