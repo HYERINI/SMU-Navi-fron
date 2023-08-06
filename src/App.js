@@ -61,7 +61,7 @@ export const PC = ({children}) => {
 function App(){
     return(<>
             <Mobile>
-                <Router>
+                <Router basename="/">
                     <Routes>
                         <Route path="/main" element={<MobileMain />}></Route>
                         <Route path="/login" element={<MobileLogin />}></Route>
