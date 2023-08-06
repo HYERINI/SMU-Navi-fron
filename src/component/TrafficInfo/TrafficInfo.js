@@ -10,7 +10,7 @@ const TrafficInfo = ({traffic_data}) => {   //traffic_data = 받아 올 시위 �
     useEffect(() => {
         async function fetchData() {
             await axios
-                .get("http://localhost:8080/api/accidents")
+                .get("http://smu-navi.ap-northeast-2.elasticbeanstalk.com/api/accidents")
                 .then((response) => {
                     console.log(response.data.data[0].station.stationName)
                     let newInfo = [];
@@ -22,6 +22,7 @@ const TrafficInfo = ({traffic_data}) => {   //traffic_data = 받아 올 시위 �
                     }
                     setInfo(newInfo);
                     setStation(newStation);
+
                 })
                 .catch((error) => {
                     console.log(error);
@@ -29,18 +30,20 @@ const TrafficInfo = ({traffic_data}) => {   //traffic_data = 받아 올 시위 �
         }
         fetchData();
     }, []);
-
+    console.log(info)
     console.log(info[0].station)
 
     function isTraffic(){
-        if(info != null){
+        if(info != 0){
             return(
                 <>
-                    {info.map((item, index) => (
-                        <div key={index}>
-                            <h5 id={"infoData"}>{station[index].stationName}에서 {item.kind} 발생</h5>
-                        </div>
-                    ))}
+                    <div id={'infoWrapper'} >
+                        {info.map((item, index) => (
+                            <div key={index}>
+                                <h5 id={"infoData"}>{item.kind}</h5>
+                            </div>
+                        ))}
+                    </div>
                 </>
             )
         }
@@ -50,7 +53,7 @@ const TrafficInfo = ({traffic_data}) => {   //traffic_data = 받아 올 시위 �
            <div id={"traffic"}>
                <span><img id={"pngwing"} src={pngwing} /></span>
                <h5 id={"traffic_title"}>교통정보</h5>
-
+               {isTraffic()}
            </div>
 
        </div>

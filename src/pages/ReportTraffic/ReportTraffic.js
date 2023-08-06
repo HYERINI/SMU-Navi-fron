@@ -49,7 +49,7 @@ function ReportTraffic(){
     }
 
     function onMoveTrafficList(){
-        navigate('/traffic_list');
+        navigate('/list_traffic');
     }
 
     function toPrev(){

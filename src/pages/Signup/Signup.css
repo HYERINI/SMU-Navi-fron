@@ -10,16 +10,35 @@ p{
     margin: 0;
 }
 
+.MobileSignupWrap{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    width: 100vw;
+}
 .signupWrapMainLogo{
     width: 170px;
     height: 210px;
 }
 
+.signupTitle{
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
 .signupBox{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 30px;
+}
+
+.MobileSignupBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 100vw;
 }
 
 .signupInputName{

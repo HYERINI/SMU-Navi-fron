@@ -1,0 +1,127 @@
+#wrapper {
+    width: 350px;
+    height: 670px;
+    height: 80%;
+    /*border: black 1px solid;*/
+    display: inline-block;
+}
+
+#location_list{
+    width: 230px;
+    height: 36px;
+    font-size: 15px;
+    border: 1px solid #0B097A;
+    border-radius: 10px;
+    display: inline-block;
+    position: static;
+    z-index: 20;
+    text-align: center;
+
+}
+
+
+
+#location_list > img{
+    transform: translate(-130px, 10px);
+    position: relative;
+    z-index: 31;
+}
+#placeholder{
+    transform: translate(-10px, -10px);
+    color: #C6C6C6;
+    z-index: 30;
+    position: relative;
+}
+#list{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 50px;
+    position: static;;
+}
+#dropDown {
+    width: 270px;
+    height: 200px;
+    background-color: white;
+    z-index: 5;
+    position: absolute;
+    margin-top: 4.5vh;
+    border-style: solid;
+    border-color: #0B097A;
+    border-width: 0 1px 1px 1px;
+    border-radius: 0px 0 10px 10px;
+    display: inline-block;
+    transform: translate(-156px, -52px);
+    overflow: scroll;
+    -ms-overflow-style: none;
+}
+#dropDown::-webkit-scrollbar{
+    display: none;
+}
+#M_map{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    z-index: 0;
+    transform: translate(0, 0);
+}
+
+.search-wrapper2{
+    height: 500px;
+    width: 350px;
+    background-color: #ffffff;
+    stroke: #879B6D;
+    border: 1px solid #879B6D;
+    position: absolute;
+    left: 10%;
+    bottom: -300px;
+    border-radius: 10px;
+    transform: translate(-30px, 0);
+    transition: bottom .3s ease-in-out; /* 0.3초 동안 이동 애니메이션 */
+    touch-action: pan-x;
+}
+
+.search-wrapper2.on {
+    bottom: 0;
+}
+#ways-list2.on{
+    height: 400px;
+}
+#Search_box_title{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+#ways-list-wrapper2{
+    display: inline-block;
+    position: absolute;
+    transform: translate(-100px, 0);
+    z-index: 50;
+}
+#ways-list2{
+    transform: translate(0%, -3vw);
+    background-color: #ffffff;
+    opacity: 0.9;
+    width: 340px;
+    height: 150px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+    left: -70px;
+
+}
+#ways-list2::-webkit-scrollbar{
+    display: none;
+}
+
+#ways_list_box{
+    padding-bottom: 10px;
+}
+
+.mobile-menu > img{
+    float: right;
+    transform: translate(-30px, 20px);
+}

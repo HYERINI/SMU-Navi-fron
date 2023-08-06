@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import './Search_Box.css';
 import axios, {head} from 'axios';
 import styled from 'styled-components';
+
 const { kakao } = window;
 var polylines = [];
 var verColor = 'black';
@@ -28,7 +29,6 @@ function Search_Box () {
     const [transferName, setTransferName] = useState([]);
     const [wayTime, setWayTime]= useState([]);
     const [map, setMap] = useState();
-    const [route, setRoute] = useState([0]);
     let [position,setposition] = useState([]);
 
     let [mysCnt, setMySCnt] = useState(5);
@@ -45,9 +45,6 @@ function Search_Box () {
 
     const [showInfo, setShowInfo] = useState([false, false, false, false, false]);
 
-    function getRandomColor() {
-        return '#' + Math.floor(Math.random() * 16777215).toString(16);
-    }
     const polyOption = {
         strokeWeight: 4, // 선의 두께
         strokeColor: 'red', // 선의 색깔
@@ -64,11 +61,11 @@ function Search_Box () {
             .then((response) => {
                 for (let k = 0; k < response.data.length; k++) {
                     position[k] = {
-                        Id: response.data[k].startStationId,
-                        title : response.data[k].startStationName,
-                        x: response.data[k].x,
-                        y: response.data[k].y,
-                        latlng: new kakao.maps.LatLng(response.data[k].y, response.data[k].x),
+                        Id: response.data[k].id,
+                        title : response.data[k].placeName,
+                        x: response.data[k].gpsX,
+                        y: response.data[k].gpxY,
+                        latlng: new kakao.maps.LatLng(response.data[k].gpsY, response.data[k].gpsX),
                     };
                     // setposition(position);
                 }
@@ -297,6 +294,10 @@ function Search_Box () {
                     }
                     polylines[k].setMap(map);
                 }
+                console.log(linePath)
+                console.log(point)
+                console.log(polylines)
+                console.log(ways)
             })
             .catch((error) => {
                 console.log(error);
@@ -347,6 +348,7 @@ function Search_Box () {
         for (var k = 0; k < mysCnt; k++) {
             polylines[k].setMap(map);
         }
+
     }
 
     async function handleOnClick (e, i) {
@@ -442,12 +444,11 @@ function Search_Box () {
     function progress(index) {
         var subPathCnt = ways[index].subPathCnt;
         var time = ways[index].time;
-        console.log(subPathCnt)
         return(
             <div id = {"progress"}>
                 {transferName[index].map((obj, index3) => (
                     <span id={"wayProgress"} key={index3}>
-                        <span id= {'progressDetail'} style={{width:((obj.sectionTime/29*13 + (time-obj.sectionTime)%10 + (time-obj.sectionTime)/10 + subPathCnt/2 )/time*95)+"%" , backgroundColor: colorSelector(ways[index].subPathList[index3].transitType, ways[index].subPathList[index3].busType, ways[index].subPathList[index3].lineName)}}><span><img  id={"icon"} src={require(`../../img/${imgSelector(ways[index].subPathList[index3].transitType, ways[index].subPathList[index3].busType, ways[index].subPathList[index3].lineName )}.png`)} /></span><span id={"busdiv"}><p id={"min"}>{obj.sectionTime}분</p></span> </span>
+                        <span id= {'progressDetail'} style={{width:((obj.sectionTime/29*10 + (time-obj.sectionTime)%10/3 + (time-obj.sectionTime)/10 + subPathCnt/2 )/time*90)+"%" , backgroundColor: colorSelector(ways[index].subPathList[index3].transitType, ways[index].subPathList[index3].busType, ways[index].subPathList[index3].lineName)}}><span><img  id={"icon"} src={require(`../../img/${imgSelector(ways[index].subPathList[index3].transitType, ways[index].subPathList[index3].busType, ways[index].subPathList[index3].lineName )}.png`)} /></span><span id={"busdiv"}><p id={"min"}>{obj.sectionTime}분</p></span> </span>
                     </span>
                 ))}
             </div>
@@ -479,7 +480,7 @@ function Search_Box () {
     function isTraffic(index) {
         if(ways[index].accidents != 0){
             return(
-                <p id={"isTraffic"}>{ways[index].accidents[0].station.stationName} {ways[index].accidents[0].kind} 발생</p>
+                <p id={"isTraffic"}>{ways[index].accidents[0].station.stationName} {ways[index].accidents[0].kind}</p>
             )
         }
     }
@@ -578,22 +579,26 @@ function Search_Box () {
             );
         setShowInfo(newShowInfo);
     }
-    console.log(ways)
+
 
     return(
-        <div style={{height: '0px'}}>
-            <div className={"search-wrapper"}>
-                <div id={"Search_box_title"}><p>상세경로</p></div>
-                {Info()}
-            </div>
-            <div id={"button_list"} >
-                {position.map((obj, index) => (
-                    <div key={index}>
-                        <button id={"locBtn"+index} onClick={e => buttonSelect(e, index)}>{obj.title}</button>
+        <>
+                <div style={{height: '0px'}}>
+                    <div className={"search-wrapper"}>
+                        <div id={"Search_box_title"}><p id={"Search_titile"}>상세경로</p></div>
+                        {Info()}
                     </div>
-                ))}
-            </div>
-        </div>
+                    <div id={"button_list"} >
+                        {position.map((obj, index) => (
+                            <div key={index}>
+                                <button id={"locBtn"+index} onClick={e => buttonSelect(e, index)}>{obj.title}</button>
+                            </div>
+                        ))}
+                    </div>
+
+                </div>
+        </>
+       
     )
 }
 

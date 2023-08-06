@@ -60,7 +60,7 @@ function Write_traffic() {
                 "Content-Type": `application/json`,
             },
             data: {
-                "transitType": selectedSubway,
+                "transitType": selectedSubway == '지하철' || selectedSubway == 'SUBWAY' ? 'SUBWAY' : 'BUS',
                 "kind": selectedAccident,
                 "stationId": selectedSubwayId,
                 "title": trafficTitle,
@@ -95,14 +95,16 @@ function Write_traffic() {
         setSelectedSubway(
             idx === 0 ? 'BUS' : 'SUBWAY'
         );
-    }
+    };
 
     const handleSubwayClick = (index) => {
+        setSelectedSubway('지하철');
         setSelectedSubwayStation(subwayList[index]);
         setSelectedSubwayId(subwayIdList[index]);
     };
 
     const handleBusClick = (index) => {
+        setSelectedSubway('버스');
         setSelectedBusStation(busList[index]);
         setSelectedSubwayId(busIdList[index]);
     };
@@ -138,12 +140,13 @@ function Write_traffic() {
                             <Catebory_btn
                                 key={index}
                                 isSelected={selectedSubway === elm}
-                                handleClick={subwayCategoryClick}
+                                handleClick={index === 0 ? handleBusClick : handleSubwayClick}
                                 elementIndex={index}
                                 content={elm}
                                 backColor="#89B8FF"
                             />
                         ))}
+
                     </div>
                     <div className={"picture_category_wrap"}>
                         <p>위치</p>

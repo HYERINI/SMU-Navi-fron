@@ -21,6 +21,11 @@ function MenuBar() {
                         꿀팁 보러가기
                     </Link>
                 </li>
+                <li>
+                    <Link to="/CCTV" className="navigation-link">
+                        CCTV 보러가기
+                    </Link>
+                </li>
             </ul>
         </nav>
     );

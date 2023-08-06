@@ -15,7 +15,7 @@ function TrafficList(){
     useEffect( () => {
         axios({
             method: 'get',
-            url: 'http://localhost:8080/api/info',
+            url: 'http://smu-navi.ap-northeast-2.elasticbeanstalk.com/api/info',
             headers: {
                 "Content-Type": "application/json"
             },
