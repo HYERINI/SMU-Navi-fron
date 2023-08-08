@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="691b5295-4573-4cb0-a2de-9cce3891c5cd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/jolpoo/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/jolpoo/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jolpoo/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/jolpoo/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1691325597796</updated>
       <workItem from="1691325601678" duration="21570000" />
-      <workItem from="1691427480949" duration="376000" />
+      <workItem from="1691427480949" duration="1232000" />
     </task>
     <servers />
   </component>
