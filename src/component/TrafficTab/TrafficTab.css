@@ -1,0 +1,53 @@
+.Traffic_tap_box {
+    box-sizing: border-box;
+    width: 270px;
+    height: 50vh;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    padding: 15px 30px;
+    display: grid;
+    grid-template-rows: 10% 20% 60% 10%;
+    cursor: pointer;
+}
+
+.Traffic_tap_time{
+    color: #5B5B5B;
+    text-align: center;
+}
+
+.Traffic_tap_title{
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.Traffic_tap_title > h1{
+    margin: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.Traffic_tap_content > p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+    overflow: hidden;
+}
+
+.Traffic_tap_heart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Traffic_tap_heart img{
+    width: 5px;
+    height: 20px;
+}
+
+#board_heart > p{
+    margin-right: 7px;
+}

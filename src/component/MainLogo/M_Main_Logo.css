@@ -1,0 +1,33 @@
+.Main_logo_title_wrap{
+    display: flex;
+    flex-direction: column;
+    height: 110px;
+    margin-bottom: -20px;
+}
+
+#MainLogo{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#MainLogo img{
+    width: 120px;
+    height: 60px;
+}
+
+#userName{
+    margin: -25px 0px 0px -10px ;
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+}
+
+#nav{
+    display: flex;
+    padding: 0;
+    margin: -35px 0px 0px 10px;
+}
+

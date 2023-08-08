@@ -1,0 +1,13 @@
+.Footer_wrap{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+.Footer_wrap img{
+    height: 70px;
+}

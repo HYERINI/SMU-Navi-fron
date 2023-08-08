@@ -1,0 +1,25 @@
+.modalBox{
+    width: 400px;
+    height: 200px;
+    background-color: #CCE0FF;
+    border-radius: 10px;
+    border: 1px solid #003B93;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.modalBox > p{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.modalBox > Button{
+    padding: 7px 40px;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+

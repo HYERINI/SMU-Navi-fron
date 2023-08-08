@@ -1,0 +1,92 @@
+{
+  "name": "untitled",
+  "version": "0.1.0",
+  "private": true,
+  "env": {
+    "test": {
+      "presets": [
+        "react-app"
+      ]
+    }
+  },
+  "dependencies": {
+    "@babel/cli": "^7.22.9",
+    "@babel/core": "^7.22.9",
+    "@babel/plugin-transform-arrow-functions": "^7.22.5",
+    "@babel/plugin-transform-template-literals": "^7.22.5",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.2.3",
+    "core-js": "3",
+    "css-loader": "^6.8.1",
+    "eslint": "^5.6.0",
+    "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0",
+    "html-webpack-plugin": "^5.5.3",
+    "http-proxy-middleware": "^2.0.6",
+    "jquery": "^3.6.3",
+    "node": "^16.15.1",
+    "nvm": "^0.0.4",
+    "react": "^18.2.0",
+    "react-cookie": "^4.1.1",
+    "react-daum-postcode": "^3.1.1",
+    "react-device-detect": "^2.2.2",
+    "react-dom": "^18.2.0",
+    "react-media": "^1.10.0",
+    "react-responsive": "^9.0.2",
+    "react-router": "^6.11.2",
+    "react-router-dom": "^6.14.2",
+    "react-scripts": "^2.1.3",
+    "styled-component": "^2.8.0",
+    "styled-components": "^6.0.0-rc.1",
+    "web-vitals": "^2.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "proxy": "http://localhost:8080",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "webpack",
+    "test": "react-scripts test"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "eslint-config-react-app": "^7.0.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "description": "/main : 메인페이지 <br/> /map_main : 지도 검색 페이지 <br/> /login : 로그인페이지 <br/> /signup : 회원가입페이지 <br/> /findpw : 비밀번호찾기페이지 <br/>",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HYERINI/SMU-Navi-fron.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HYERINI/SMU-Navi-fron/issues"
+  },
+  "homepage": "https://hyerini.github.io/pages/"
+}

@@ -1,0 +1,135 @@
+.Notice_wrap{
+    margin-left: 240px;
+    width: calc(100% - 280px);
+}
+
+.Notice_wrap > h2{
+    margin: 20px 0 0 0;
+    font-weight: 500;
+}
+
+.Notice_list_wrap{
+    border-top: 0.5px solid #879B6D;
+    border-bottom: 0.5px solid #879B6D;
+    margin-top: 20px;
+    width: 90%;
+}
+
+.Notice_list_wrap > ul{
+    margin-left: -10px;
+    margin-top: 10px;
+}
+/*.Notice_list_wrap{*/
+/*    border-bottom: 0.5px solid #EFFBE8;*/
+/*}*/
+
+#noticeInput{
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #879B6D;
+    width: 90%;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.Notice_write_wrap{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 15px;
+}
+
+.Notice_write_title_wrap{
+    margin: 0;
+    background-color: #F5FFE9;
+    font-size: 1rem;
+    text-align: center;
+    border-bottom: 0.5px solid #EFFBE8;
+}
+
+.Notice_write_title_wrap > input{
+    background: none;
+    border: 0;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+}
+
+.Notice_write_content_wrap{
+    margin: 0;
+    background-color: rgb(239, 244, 235, 0.47);
+    font-size: 1rem;
+    text-align: left;
+}
+
+.Notice_write_content_wrap > textarea{
+    border: none;
+    background-color: rgb(239, 244, 235, 0.47);
+    width: 100%;
+    padding: 20px;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    height: 400px;
+}
+
+.noticeSubmitBtWrap{
+    width: 90%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#noticeSubmitBt{
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+.Notice_real_wrap{
+    border-top: 0.5px solid #879B6D;
+    width: 85%;
+    margin-top: 20px;
+}
+
+.Notice_wrap_title > h3{
+    margin: 0;
+    padding: 10px 0px;
+    background-color: #F5FFE9;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.Notice_wrap_title > div{
+    background-color: rgb(239, 244, 235, 0.47);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px 0;
+    border-bottom: 0.5px solid #EFFBE8;
+}
+
+.Notice_wrap_content{
+    height: 350px;
+    overflow: auto;
+    border-bottom: 0.5px solid #879B6D;
+    background-color: rgb(239, 244, 235, 0.47);
+}
+
+.Notice_wrap_content > p{
+    padding: 25px;
+}
+
+.Notice_write_button_wrap{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.Notice_write_button_wrap > button{
+    padding: 5px 10px;
+    background-color: #879B6D;
+    font-size: 17px;
+    border-radius: 15px;
+    color: white;
+}

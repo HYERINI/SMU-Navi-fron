@@ -1,0 +1,14 @@
+.Nav_bar_wrap{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 15px;
+    width: 70%;
+}
+
+.Nav_bar_wrap div{
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}

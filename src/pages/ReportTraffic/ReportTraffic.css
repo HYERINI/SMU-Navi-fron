@@ -1,0 +1,260 @@
+.Report_big_wrap{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.Report_title_wrap > p{
+    width: 100%;
+    line-height: 30px;
+}
+
+.Report_big_wrap > p{
+    width: 90%;
+    margin-top: 20px;
+}
+
+.Repost_wrap1{
+    border-top: 0.5px solid #879B6D;
+    width: 95%;
+    margin-top: 20px;
+}
+
+.Report_wrap{
+    border-top: 0.5px solid #879B6D;
+    width: 85%;
+    margin-top: 20px;
+}
+
+.Report_wrap_title > h3{
+    margin: 0;
+    padding: 10px 0px;
+    background-color: #F5FFE9;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.Report_wrap_title > div{
+    background-color: rgb(239, 244, 235, 0.47);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px 0;
+    border-bottom: 0.5px solid #EFFBE8;
+}
+
+.Report_search_wrap{
+    width: 90%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Report_search{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.Report_search > select{
+    margin-right: 10px;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    margin-left: 15px;
+}
+
+.Report_search > button{
+    width: 80px;
+    height: auto;
+    font-size: 16px;
+}
+
+.Report_list_wrap{
+    border-top: 0.5px solid #879B6D;
+    border-bottom: 0.5px solid #879B6D;
+    margin-top: 40px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.Report_list_wrap > ul{
+    margin-bottom: 5px;
+    margin-left: -10px;
+    margin-top: 5px;
+}
+
+.Report_list_wrap > ul > li{
+    border-bottom: 1px solid #EFFBE8;
+    padding-bottom: 10px;
+}
+
+.Report_list_wrap > ul > li:last-child{
+    border-bottom: 0;
+}
+
+#trafficInput{
+    background-color: white;
+    border-radius: 2px;
+    border: 1px solid black;
+    width: 60vw;
+    height: 30px;
+    margin-top: 10px;
+}
+
+#searchPlace{
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid black;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    width: 65vw;
+    height: 100%;
+}
+
+.Report_wrap_content{
+    border-bottom: 0.5px solid #879B6D;
+    background-color: rgb(239, 244, 235, 0.47);
+}
+
+.Report_wrap_content > p{
+    padding: 25px;
+}
+
+.Report_wrap_content_heart, .Report_wrap_content_heart > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Report_wrap_content_heart{
+    padding: 10px 0 20px 0;
+}
+
+.Report_wrap_content_heart > div > p{
+    padding: 0px 6px;
+    font-weight: 700;
+}
+
+.Report_list_wrap > li:last-child{
+    border-bottom: 0;
+}
+
+.Traffic_category_wrap, .Location_category_wrap, .picture_category_wrap{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: rgb(239, 244, 235, 0.47);
+    border-top: 0.5px solid #E4E4E4;
+}
+
+.content_category_wrap{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgb(239, 244, 235, 0.47);
+    border-top: 0.2px solid #E4E4E4;
+}
+
+.Traffic_category_wrap > div, .Location_category_wrap > div, .picture_category_wrap > div{
+    margin: 0 10px;
+}
+
+.content_category_wrap > textarea{
+    margin-top: 10px;
+    font-size: 1.2rem;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    background-color: transparent;
+}
+
+.submitTrafficBtWrap{
+    margin: 15px 0;
+}
+
+.submitTrafficBtWrap > button{
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.submitTrafficBtWrap{
+    width: 100%;
+    text-align: center;
+}
+
+.Report_detail_type, .Report_detail_location{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 0px 12px 10px;
+    background-color: rgb(239, 244, 235, 0.47);
+    box-sizing: border-box;
+}
+
+.Report_detail_type > button, .Report_detail_location > button{
+    box-sizing: border-box;
+    margin-left: 10px;
+    font-size: 17px;
+    padding: 2px 10px;
+    border-radius: 15px;
+    color: white;
+}
+
+.Report_detail_type > button{
+    background-color: #FFB800;
+}
+
+.Report_detail_location > button{
+    background-color: #89B8FF;
+}
+
+.Report_tap_top_wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-right: 120px;
+}
+
+#left_arrow, #right_arrow{
+    width: 40px;
+    height: 40px;
+    margin: auto 10px;
+    cursor: pointer;
+}
+
+.Report_tab_wrap{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    max-width: 870px;
+    overflow: hidden;
+}
+
+.On_Move_WriteTraffic{
+    margin-top: 10px;
+    margin-right: 120px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#onMoveWriteReportBt, #onMoveTrafficListBt{
+    padding: 7px 15px;
+    background-color: #879B6D;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    font-size: 16px;
+}
+#onMoveWriteReportBt{
+    margin-left: 15px;
+ }
+
+.traffic_tab_box{
+    margin: 0;
+}

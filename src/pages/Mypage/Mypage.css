@@ -1,0 +1,27 @@
+.MyPageWrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.MyPageTotalWrap{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 10px auto 0px auto;
+}
+
+.underBar{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #000000;
+    height: 1px;
+}
+
+.MyPageTotalRealWrap{
+    width: 80%;
+    padding-left: 30px;
+}
+
+.MyPageTotalRealWrap h2{
+    margin: 10px 0px;
+}

@@ -1,0 +1,33 @@
+#traffic{
+    position: absolute;
+    width: 12vw;
+    height: 30vh;
+    border: 1px solid #879B6D;
+    transform: translate(1vw, 0vh);
+    display: inline-block;
+
+}
+
+#pngwing{
+    width: 2.8vw;
+    height: 2.8vw;
+    position: absolute;
+    transform: translate(0.5vw, 1vh);
+}
+
+#traffic_title {
+    transform: translate(3.7vw, -2.5vh);
+    font-size: 20px;
+}
+
+#infoData {
+    text-align: center;
+}
+
+#infoWrapper{
+    transform: translate(0, -6vh);
+    width: 12vw;
+    height: 23vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}

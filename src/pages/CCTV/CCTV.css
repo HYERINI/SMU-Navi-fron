@@ -1,0 +1,28 @@
+#cctv-wrapper{
+    margin-top: -200px;
+    text-align: center;
+    height: 700px;
+    overflow: hidden;
+}
+#cctv{
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    width: 800px;
+    height: 700px;
+    display: inline-block;
+}
+
+#cctv-wrapper > button{
+    width: 100px;
+    height: 50px;
+    display: block;
+    margin-top: 50px;
+    transform: translate(25vw, 35vh);
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-size: large;
+    font-weight: bold;
+}
+

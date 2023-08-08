@@ -1,0 +1,33 @@
+.navigation-bar {
+    margin: 20px 0 40px 0;
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* 중앙 정렬 */
+    width: 100%;
+}
+
+.navigation-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* 넓게 위치 */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation-menu li {
+    margin: 0 7vw;
+}
+
+.navigation-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.navigation-link:hover {
+    border-bottom: 3px solid #5A634E;
+}

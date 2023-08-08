@@ -1,0 +1,208 @@
+.search-wrapper{
+    height: 65vh;
+    width: 15vw;
+    margin-top: 110px;
+    background-color: #ffffff;
+    stroke: #879B6D;
+    border: 1px solid #879B6D;
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transform: translate(28%, -4vh);
+}
+
+#Search_box_title{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+}
+
+#Search_title{
+    font-size: 50px;
+}
+
+#Search_box_title p{
+    text-align: center;
+    padding: 10px;
+    margin: 30px auto 0 auto;
+    color: black;
+    font-size: 25px;
+    font-weight: bolder;
+    transform: translate(0, -60%);
+}
+
+#ways-list-wrapper{
+    display: inline-block;
+}
+#ways-list{
+    transform: translate(0%, -3vw);
+    background-color: #ffffff;
+    opacity: 0.9;
+    width: 100%;
+    height: 78%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 25%;
+}
+
+#ways_list_box{
+    padding-bottom: 10px;
+}
+
+#h4{
+    margin: 15px 0 10px 0;
+    color: black;
+}
+
+#button_list{
+    transform: translate(88%, -55vh);
+    padding-top: -20px;
+    margin-top: -20px;
+    height: 70%;
+    overflow: scroll;
+    height: calc(80vh - 110px);
+    overflow-x: hidden;
+}
+
+#button_list button{
+    margin-top: 2%;
+    width: 8%;
+    height: 30px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-size: x-small;
+}
+
+#showInfo{
+    font-size: x-small;
+    transform: translate(35%, 30%);
+    text-decoration: underline;
+}
+
+#bestWay{
+    margin-left: 12%;
+    text-align: left;
+    font-size: small;
+}
+
+#time{
+    margin-left: 10%;
+    text-align: left;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#progress{
+    position: center;
+    display: inline-block;
+    align-items: center;
+    text-align: left;
+    width: 95%;
+    height: 3vh;
+
+}
+#icon{
+    width: 18px;
+    position: relative;
+    z-index: 2;
+    transform: translate(0, -7%);
+}
+
+#wayDetail{
+    margin-bottom: -5vh;
+}
+#takePoint{
+    font-size: 14px;
+    font-weight: bold;
+}
+#offPoint{
+    font-size: 14px;
+    font-weight: bold;
+    transform: translate(0, 0vh);
+    margin-bottom: 5vh;
+
+}
+#first{
+    transform: translate(0, -1vh);
+}
+#firstIcon{
+    width: 18px;
+    position: relative;
+    z-index: 2;
+    transform: translate(-0.3vw, 0.3vh);
+}
+
+#firstInfo{
+    border-radius: 15px;
+    color: white;
+    padding: 3px 6px 3px 6px;
+}
+
+
+#min{
+    position: relative;
+    transform: translate(37%, -160%);
+    font-size: 1px;
+    font-weight: bold;
+    z-index: 3;
+}
+
+#progressDetail{
+    width: 35%;
+    height: 2vh;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    border-radius: 10px;
+    margin-right: -0.4vw;
+
+}
+#infoDetail{
+    display: flex;
+    transform: translate(0vw, 0.3vh);
+    text-align: center;
+    margin-left: 5%;
+}
+#verProgress{
+    width: 5px;
+    height: 8.5vh;
+    display: inline-block;
+    border-radius: 10px;
+    transform: translate(0.5vw, -0.2vh);
+    z-index: 5;
+    margin-left: 25px;
+}
+
+#detailIcon{
+    width: 18px;
+    position: relative;
+    z-index: 2;
+    transform: translate(1.5vw, 2.5vh);
+}
+#typeDetail{
+    transform:translate(2vw, 2.5vh);
+    font-size: 13px;
+}
+
+
+#detailMin {
+    font-size: xx-small;
+    transform: translate(0vw,0vh);
+    text-align: right;
+    position: fixed;
+}
+
+#isTraffic {
+    text-align: center;
+    transform: translate(-1%, 0%);
+    color: #da3c0d;
+    font-size: 12px;
+}

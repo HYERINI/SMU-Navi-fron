@@ -1,0 +1,118 @@
+p{
+    margin: 0;
+}
+
+.signupWrap{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.MobileSignupWrap{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    width: 100vw;
+}
+.signupWrapMainLogo{
+    width: 170px;
+    height: 210px;
+}
+
+.signupTitle{
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
+.signupBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.MobileSignupBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 100vw;
+}
+
+.signupInputName{
+    margin-top: 15px;
+    color: #909090;
+    font-size: 17px;
+}
+
+.signupInputNameBox{
+    display: flex;
+    flex-direction: row;
+}
+
+.signupInputBoxWrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.signupMailInputBox{
+    display: flex;
+    flex-direction: row;
+}
+
+#nameSignupInput{
+    width: 170px;
+    height: 30px;
+}
+
+#pwSignupInput{
+    width: 415px;
+    height: 30px;
+}
+
+#mailSignupInput{
+    width: 150px;
+}
+
+#sameNameCheckBt{
+    margin: auto 0px auto 10px;
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+}
+
+#certifyNumInput{
+    width: 325px;
+    height: 30px;
+}
+
+#signupBt{
+    margin-top: 30px;
+    width: 415px;
+    height: 35px;
+    font-size: 18px;
+}
+
+#redNameTitle{
+    color: #F08888;
+    font-size: 12px;
+    margin-left: 8px;
+    margin-top: 12px;
+    display: none;
+}
+
+#redPwTitle, #redPwCheckTitle{
+    color: #F08888;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#redNumTitle{
+    color: #F08888;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
