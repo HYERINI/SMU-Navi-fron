@@ -24,6 +24,7 @@
     "css-loader": "^6.8.1",
     "eslint": "^5.6.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.3",
     "http-proxy-middleware": "^2.0.6",
     "jquery": "^3.6.3",
@@ -87,5 +88,6 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/HYERINI/SMU-Navi-fron/issues"
-  }
+  },
+  "homepage": "https://hyerini.github.io/pages/"
 }
